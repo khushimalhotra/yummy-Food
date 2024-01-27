@@ -1,0 +1,269 @@
+* {
+    margin: -1px;
+    padding: 0;
+}
+
+:root {
+    --navbar-height: 59px;
+}
+
+#logo {
+    margin: 1px 10px;
+    ;
+
+}
+
+#logo img {
+    height: 154px;
+    width: 166px;
+    margin: 1px;
+}
+
+
+#navbar ul {
+    display: flex;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#navbar::before {
+
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 238%;
+    width: 189%;
+    z-index: -1;
+    opacity: 2;
+}
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+#navbar {
+
+    display: flex;
+    align-items: center;
+    position: relative top: 0px;
+
+}
+
+/*home*/
+#home {
+
+    display: flex;
+    flex-direction: column;
+    padding: 2px 54px;
+    height: 587px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before {
+    content: "";
+    background: url('../bg.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    height: 119%;
+    top: 0px;
+    left: 0px;
+    border: 3px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+#home h1 {
+
+    color: white;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#home p {
+
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/*service*/
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+
+    border: 3px rgb(3, 3, 3);
+    padding: 34px;
+    margin: 3px;
+    border-radius: 23px;
+    background-color: rgb(204, 187, 162);
+}
+
+#services .box img {
+    width: max-content;
+    height: 130px;
+    margin: auto;
+    display: block;
+
+}
+
+#services .box p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#services {}
+
+#services {}
+
+#services {}
+
+/*client*/
+#client-section {
+    
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 101%;
+    height: 40%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.client-item {
+    padding: 10px;
+
+
+}
+
+#clients img {
+    height: auto;
+
+}
+
+/*contact*/
+#contact {
+    position: relative;
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('../contact-us-2993000_1280.jpg') no-repeat center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 399px;
+    padding: 0.5rem;
+    margin: 2px;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 24%;
+
+}
+
+#contact-box label {
+    font-size: 1.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+
+
+footer {
+    background: #00000099;
+    color: white;
+    padding: 1px 14px;
+    position: fixed;
+    left: 10px;
+    bottom: 0px;
+    right: 10px;
+    width: 100%;
+}
+
+/*utility class*/
+.h-primary {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.8rem;
+    padding: 25px
+}
+
+.h-secondary {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.3rem;
+    padding: 12px;
+
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: orangered;
+    color: white;
+    margin: 19px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
